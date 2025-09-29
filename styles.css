@@ -399,6 +399,8 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    display: grid;
+    margin: 0 auto 16px auto;
 }
 
 #social a{
