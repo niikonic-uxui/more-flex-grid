@@ -1,5 +1,5 @@
 /*
-    Name: 
+    Name: Nia Metcalf-Thomas
 */
 
 :root{
@@ -74,6 +74,11 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display:flex;
+    flex-wrap: wrap;
+
+
+    
 }
 
 /* For All Headings */
@@ -137,6 +142,7 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
 }
 
 nav a{
@@ -165,6 +171,8 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    top: 0;
+    z-index: 1;
 }
 
 nav a:focus{
@@ -224,6 +232,7 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
 }
 
 #plants h3, #plants > p{
