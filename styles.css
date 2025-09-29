@@ -233,17 +233,27 @@ p{
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    
+    
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 #plants h4{
@@ -256,6 +266,7 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    order: -1;
 }
 
 .price{
@@ -274,12 +285,21 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns:auto auto;
+    order: 2;
+    gap: 32px;
+    
 }
 
 /* Contact Heading and Paragraph */
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    display: grid;
+    grid-column: 1 / -1;
+    
+   
 }
 
 /* Contact text color */
@@ -370,6 +390,9 @@ th:nth-of-type(even), td:nth-of-type(even){
     margin: 16px auto;
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 16px;
 }
 
 /* Heading for Social Media Section */
